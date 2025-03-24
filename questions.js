@@ -30,7 +30,7 @@ const questions = [
       "question": "Which sentence best describes you?",
       "answer1": "I often feel superior to others.",
       "answer1Total": "3",
-      "answer2": "I’m more practical than creative.",
+      "answer2": "I'm more practical than creative.",
       "answer2Total": "2",
       "answer3": "I care more about avoiding conflict than winning debates.",
       "answer3Total": "1"
@@ -45,8 +45,8 @@ const questions = [
       "answer3Total": "3"
     },
     {
-      "question": "Your friend cancels plans last minute. What’s your reaction?",
-      "answer1": "Plan an amazing night so they won’t cancel again.",
+      "question": "Your friend cancels plans last minute. What's your reaction?",
+      "answer1": "Plan an amazing night so they won't cancel again.",
       "answer1Total": "3",
       "answer2": "Feel hurt because you were excited about it.",
       "answer2Total": "2",
