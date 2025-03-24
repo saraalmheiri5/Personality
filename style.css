@@ -1,0 +1,131 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.7rem;
+    background: linear-gradient(135deg, #f0f2f5, #e3e7ec);
+    color: #333;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .quiz-container {
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem 3rem;
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    color: #444;
+  }
+  .title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #4a4e69;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .question {
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    color: #222;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    color: #444;
+    background: #f0f4f8;
+    border: 2px solid #e0e6ed;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  .option:hover {
+    background: #e3effd;
+    transform: scale(1.02);
+  }
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  input[type="radio"]:checked + .option {
+    background: #3a86ff;
+    color: #fff;
+    border: 2px solid #3a86ff;
+    font-weight: 600;
+  }
+  .controls > * {
+    margin: 1rem 0;
+    width: 100%;
+  }
+  button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #fff;
+    background: #3a86ff;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  button.previous {
+    background: #ff6b6b;
+  }
+  button.next {
+    background: #3a86ff;
+  }
+  button.restart {
+    background: #4CAF50;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    width: 100%;
+    transition: background 0.4s ease-in-out;
+  }
+  button:hover,
+  button:focus {
+    background: #265dff;
+    transform: scale(1.05);
+  }
+  .result {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #4a4e69;
+  }
+  .final-score {
+    color: #3a86ff;
+    font-weight: 700;
+  }
+  .summary {
+    font-size: 1rem;
+    color: #4a4e69;
+    background: #f0f2f5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+  .summary h1 {
+    color: #3a86ff;
+  }
