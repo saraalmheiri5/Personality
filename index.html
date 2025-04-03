@@ -2,43 +2,53 @@
 <html lang="en">
 
 <head>
-    <title>Personality Quiz</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <title>Personality Quiz</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="quiz-container">
-        <div class="title">Personality Quiz</div>
-        <div id="question" class="question"></div>
-
-        <label class="option">
-            <input type="radio" name="option" value="1" />
-            <span class="option1"></span>
-        </label>
-        <label class="option">
-            <input type="radio" name="option" value="2" />
-            <span class="option2"></span>
-        </label>
-        <label class="option">
-            <input type="radio" name="option" value="3" />
-            <span class="option3"></span>
-        </label>
-
-      
-        <div class="controls">
-            <button class="previous">Previous</button>
-            <button class="next">Next</button>
-        </div>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html" class="logo">PersonaQuiz</a>
+    <div class="nav-links">
+      <a href="https://delightful-sea-07a450f10.6.azurestaticapps.net/">📄 Proposal</a>
     </div>
+  </nav>
 
-    <div class="result" style="display: none;">
-        
+  <!-- Quiz Container -->
+  <div class="quiz-container">
+    <div class="title">Personality Quiz</div>
+    <div id="question" class="question"></div>
+
+    <label class="option">
+      <input type="radio" name="option" value="1" />
+      <span class="option1"></span>
+    </label>
+    <label class="option">
+      <input type="radio" name="option" value="2" />
+      <span class="option2"></span>
+    </label>
+    <label class="option">
+      <input type="radio" name="option" value="3" />
+      <span class="option3"></span>
+    </label>
+
+    <div class="controls">
+      <button class="previous">Previous</button>
+      <button class="next">Next</button>
     </div>
+  </div>
 
-    <script src="questions.js"></script>
-    <script src="main.js"></script>
+  <!-- Result Section -->
+  <div class="result" style="display: none;"></div>
+
+  <!-- Scripts -->
+  <script src="questions.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
